@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @Testcontainers
 class BookRepositoryTest {
     @Container
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine");
+    static  PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine");
 
     private final BookRepository bookRepository = new BookRepository();
 
